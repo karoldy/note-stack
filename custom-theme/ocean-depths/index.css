@@ -1,0 +1,164 @@
+/* Ocean Depths — 深海主题
+ * Deep navy + teal accents, cream backgrounds.
+ * Professional and calming — for authoritative technical documentation.
+ *
+ * Light: crisp cream + navy text
+ * Dark: deep ocean night with teal highlights
+ */
+
+/* ===== Light Mode ===== */
+[data-theme="ocean-depths"] {
+  /* Brand */
+  --rp-c-brand: #1a2332;
+  --rp-c-brand-light: #2d8b8b;
+  --rp-c-brand-lighter: #d8eeed;
+  --rp-c-brand-dark: #111924;
+  --rp-c-brand-darker: #0a1018;
+  --rp-c-brand-tint: rgba(26, 35, 50, 0.08);
+
+  /* Background */
+  --rp-c-bg: #f1faee;
+  --rp-c-bg-soft: #e8f4ea;
+  --rp-c-bg-mute: #ddeee0;
+  --rp-c-bg-alt: #ffffff;
+
+  /* Text */
+  --rp-c-text-1: #1a2332;
+  --rp-c-text-2: rgba(26, 35, 50, 0.70);
+  --rp-c-text-3: rgba(26, 35, 50, 0.36);
+  --rp-c-text-4: rgba(26, 35, 50, 0.16);
+
+  /* Links */
+  --rp-c-link: var(--rp-c-brand-light);
+  --rp-c-link-hover: var(--rp-c-brand);
+
+  /* Dividers */
+  --rp-c-divider: rgba(26, 35, 50, 0.16);
+  --rp-c-divider-light: rgba(26, 35, 50, 0.08);
+
+  /* Gray scale */
+  --rp-c-gray: #7a8a96;
+  --rp-c-gray-light-1: #96a4ae;
+  --rp-c-gray-light-2: #b0bbc3;
+  --rp-c-gray-light-3: #c8d0d6;
+  --rp-c-gray-light-4: #dee3e6;
+  --rp-c-gray-light-5: #f0f2f3;
+
+  /* Inline Code */
+  --rp-c-text-code: #2d8b8b;
+  --rp-c-text-code-bg: rgba(45, 139, 139, 0.06);
+  --rp-c-text-code-border: rgba(45, 139, 139, 0.08);
+
+  /* Code Block */
+  --rp-code-title-bg: #e8f4ea;
+  --rp-code-block-bg: var(--rp-c-bg);
+  --rp-code-block-color: #1e2836;
+  --rp-code-block-border: 1px solid var(--rp-c-divider-light);
+
+  /* Home Page */
+  --rp-home-hero-secondary-color: #2d8b8b;
+  --rp-home-hero-title-bg: linear-gradient(
+    90deg,
+    var(--rp-c-brand) 0%,
+    var(--rp-c-brand) 30%,
+    var(--rp-home-hero-secondary-color) 100%
+  );
+  --rp-home-background-bg: radial-gradient(
+      ellipse 80% 60% at 50% -20%,
+      rgba(26, 35, 50, 0.04),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(45, 139, 139, 0.04),
+      transparent
+    ),
+    var(--rp-c-bg);
+  --rp-home-feature-bg: linear-gradient(
+    135deg,
+    #ffffff,
+    rgba(45, 139, 139, 0.03)
+  );
+
+  /* Font */
+  --rp-font-family-base: 'Inter', 'SF Pro Text', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --rp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code',
+    'SF Mono', 'Consolas', monospace;
+}
+
+/* ===== Dark Mode ===== */
+[data-theme="ocean-depths"].dark,
+.dark [data-theme="ocean-depths"] {
+  /* Brand */
+  --rp-c-brand: #3dabab;
+  --rp-c-brand-light: #5dbfbf;
+  --rp-c-brand-lighter: #1a3035;
+  --rp-c-brand-dark: #2d8b8b;
+  --rp-c-brand-darker: #1d6b6b;
+  --rp-c-brand-tint: rgba(61, 171, 171, 0.14);
+
+  /* Background */
+  --rp-c-bg: #0d1520;
+  --rp-c-bg-soft: #131d2a;
+  --rp-c-bg-mute: #1a2535;
+  --rp-c-bg-alt: #080e16;
+
+  /* Text */
+  --rp-c-text-1: #e8f0f0;
+  --rp-c-text-2: rgba(232, 240, 240, 0.70);
+  --rp-c-text-3: rgba(232, 240, 240, 0.36);
+  --rp-c-text-4: rgba(232, 240, 240, 0.16);
+
+  /* Links */
+  --rp-c-link: var(--rp-c-brand-light);
+  --rp-c-link-hover: var(--rp-c-brand);
+
+  /* Dividers */
+  --rp-c-divider: rgba(232, 240, 240, 0.14);
+  --rp-c-divider-light: rgba(232, 240, 240, 0.07);
+
+  /* Gray scale */
+  --rp-c-gray: #6a7a8a;
+  --rp-c-gray-light-1: #4d5d6d;
+  --rp-c-gray-light-2: #3d4d5a;
+  --rp-c-gray-light-3: #2e3d4a;
+  --rp-c-gray-light-4: #212f3a;
+  --rp-c-gray-light-5: #18222b;
+
+  /* Inline Code */
+  --rp-c-text-code: #5dbfbf;
+  --rp-c-text-code-bg: rgba(61, 171, 171, 0.10);
+  --rp-c-text-code-border: rgba(61, 171, 171, 0.12);
+
+  /* Code Block */
+  --rp-code-title-bg: #111d28;
+  --rp-code-block-bg: var(--rp-c-bg);
+  --rp-code-block-color: #cdd8e0;
+  --rp-code-block-border: 1px solid var(--rp-c-divider-light);
+
+  /* Home Page */
+  --rp-home-hero-secondary-color: #5dbfbf;
+  --rp-home-hero-title-bg: linear-gradient(
+    90deg,
+    var(--rp-c-brand) 0%,
+    var(--rp-c-brand) 30%,
+    var(--rp-home-hero-secondary-color) 100%
+  );
+  --rp-home-background-bg: radial-gradient(
+      ellipse 80% 60% at 50% -20%,
+      rgba(61, 171, 171, 0.06),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(106, 122, 138, 0.04),
+      transparent
+    ),
+    var(--rp-c-bg);
+  --rp-home-feature-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(61, 171, 171, 0.04)
+  );
+}

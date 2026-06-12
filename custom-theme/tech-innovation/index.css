@@ -1,0 +1,164 @@
+/* Tech Innovation — 科技蓝主题
+ * Electric blue accents, high contrast, VS Code-inspired dark mode.
+ * For the modern developer tool aesthetic.
+ *
+ * Light: crisp white + sharp blue
+ * Dark: editor-like dark bg + neon accents
+ */
+
+/* ===== Light Mode ===== */
+[data-theme="tech-innovation"] {
+  /* Brand */
+  --rp-c-brand: #0066ff;
+  --rp-c-brand-light: #3388ff;
+  --rp-c-brand-lighter: #e0ecff;
+  --rp-c-brand-dark: #0052cc;
+  --rp-c-brand-darker: #003d99;
+  --rp-c-brand-tint: rgba(0, 102, 255, 0.10);
+
+  /* Background */
+  --rp-c-bg: #ffffff;
+  --rp-c-bg-soft: #f8f9fa;
+  --rp-c-bg-mute: #f1f3f5;
+  --rp-c-bg-alt: #ffffff;
+
+  /* Text */
+  --rp-c-text-1: #1e1e1e;
+  --rp-c-text-2: rgba(30, 30, 30, 0.72);
+  --rp-c-text-3: rgba(30, 30, 30, 0.38);
+  --rp-c-text-4: rgba(30, 30, 30, 0.18);
+
+  /* Links */
+  --rp-c-link: var(--rp-c-brand-dark);
+  --rp-c-link-hover: var(--rp-c-brand);
+
+  /* Dividers */
+  --rp-c-divider: rgba(0, 0, 0, 0.14);
+  --rp-c-divider-light: rgba(0, 0, 0, 0.07);
+
+  /* Gray scale */
+  --rp-c-gray: #6b7280;
+  --rp-c-gray-light-1: #9ca3af;
+  --rp-c-gray-light-2: #d1d5db;
+  --rp-c-gray-light-3: #e5e7eb;
+  --rp-c-gray-light-4: #f3f4f6;
+  --rp-c-gray-light-5: #f9fafb;
+
+  /* Inline Code */
+  --rp-c-text-code: #0066ff;
+  --rp-c-text-code-bg: rgba(0, 102, 255, 0.05);
+  --rp-c-text-code-border: rgba(0, 102, 255, 0.08);
+
+  /* Code Block */
+  --rp-code-title-bg: #f8f9fa;
+  --rp-code-block-bg: var(--rp-c-bg);
+  --rp-code-block-color: #1e1e1e;
+  --rp-code-block-border: 1px solid var(--rp-c-divider-light);
+
+  /* Home Page */
+  --rp-home-hero-secondary-color: #00d4ff;
+  --rp-home-hero-title-bg: linear-gradient(
+    90deg,
+    var(--rp-c-brand-dark) 0%,
+    var(--rp-c-brand) 50%,
+    var(--rp-home-hero-secondary-color) 100%
+  );
+  --rp-home-background-bg: radial-gradient(
+      ellipse 80% 60% at 50% -20%,
+      rgba(0, 102, 255, 0.05),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(0, 212, 255, 0.04),
+      transparent
+    ),
+    var(--rp-c-bg);
+  --rp-home-feature-bg: linear-gradient(
+    135deg,
+    #ffffff,
+    rgba(0, 102, 255, 0.03)
+  );
+
+  /* Font */
+  --rp-font-family-base: 'Inter', 'SF Pro Text', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --rp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code',
+    'SF Mono', 'Consolas', monospace;
+}
+
+/* ===== Dark Mode ===== */
+[data-theme="tech-innovation"].dark,
+.dark [data-theme="tech-innovation"] {
+  /* Brand */
+  --rp-c-brand: #3388ff;
+  --rp-c-brand-light: #66aaff;
+  --rp-c-brand-lighter: #1a2d4d;
+  --rp-c-brand-dark: #0066ff;
+  --rp-c-brand-darker: #0052cc;
+  --rp-c-brand-tint: rgba(51, 136, 255, 0.16);
+
+  /* Background */
+  --rp-c-bg: #1e1e1e;
+  --rp-c-bg-soft: #252526;
+  --rp-c-bg-mute: #2d2d30;
+  --rp-c-bg-alt: #121212;
+
+  /* Text */
+  --rp-c-text-1: #e0e0e0;
+  --rp-c-text-2: rgba(224, 224, 224, 0.72);
+  --rp-c-text-3: rgba(224, 224, 224, 0.38);
+  --rp-c-text-4: rgba(224, 224, 224, 0.18);
+
+  /* Links */
+  --rp-c-link: var(--rp-c-brand-light);
+  --rp-c-link-hover: var(--rp-c-brand);
+
+  /* Dividers */
+  --rp-c-divider: rgba(255, 255, 255, 0.12);
+  --rp-c-divider-light: rgba(255, 255, 255, 0.06);
+
+  /* Gray scale */
+  --rp-c-gray: #6b7280;
+  --rp-c-gray-light-1: #4b5563;
+  --rp-c-gray-light-2: #374151;
+  --rp-c-gray-light-3: #2d3748;
+  --rp-c-gray-light-4: #1f2937;
+  --rp-c-gray-light-5: #111827;
+
+  /* Inline Code */
+  --rp-c-text-code: #66aaff;
+  --rp-c-text-code-bg: rgba(51, 136, 255, 0.10);
+  --rp-c-text-code-border: rgba(51, 136, 255, 0.14);
+
+  /* Code Block */
+  --rp-code-title-bg: #252526;
+  --rp-code-block-bg: var(--rp-c-bg);
+  --rp-code-block-color: #d4d4d4;
+  --rp-code-block-border: 1px solid var(--rp-c-divider-light);
+
+  /* Home Page */
+  --rp-home-hero-secondary-color: #00d4ff;
+  --rp-home-hero-title-bg: linear-gradient(
+    90deg,
+    var(--rp-c-brand-light) 0%,
+    var(--rp-c-brand) 50%,
+    var(--rp-home-hero-secondary-color) 100%
+  );
+  --rp-home-background-bg: radial-gradient(
+      ellipse 80% 60% at 50% -20%,
+      rgba(51, 136, 255, 0.08),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(0, 212, 255, 0.05),
+      transparent
+    ),
+    var(--rp-c-bg);
+  --rp-home-feature-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(51, 136, 255, 0.04)
+  );
+}
