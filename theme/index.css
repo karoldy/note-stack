@@ -1,0 +1,21 @@
+/**
+ * Theme entry — loads all custom theme stylesheets.
+ *
+ * Theme switching works via the `data-theme` attribute on <html>.
+ * Each theme's CSS is scoped to `[data-theme="theme-id"]`, so all
+ * stylesheets can coexist without conflicts.
+ *
+ * @see ../custom-theme/ for individual theme definitions
+ */
+
+/* Forest Canopy — default theme */
+@import '../custom-theme/forest-canopy/index.css';
+
+/* Ocean Depths */
+@import '../custom-theme/ocean-depths/index.css';
+
+/* Tech Innovation */
+@import '../custom-theme/tech-innovation/index.css';
+
+/* Midnight Galaxy */
+@import '../custom-theme/midnight-galaxy/index.css';

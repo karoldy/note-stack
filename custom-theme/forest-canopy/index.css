@@ -1,0 +1,165 @@
+/* Forest Canopy — 数字花园主题
+ * Natural green tones, warm ivory backgrounds, serif headings.
+ * Inspired by the metaphor of knowledge as a growing, interconnected garden.
+ *
+ * Light: warm paper-like reading experience
+ * Dark: deep forest night
+ */
+
+/* ===== Light Mode ===== */
+[data-theme="forest-canopy"] {
+  /* Brand */
+  --rp-c-brand: #2d4a2b;
+  --rp-c-brand-light: #3d6340;
+  --rp-c-brand-lighter: #d5e5d4;
+  --rp-c-brand-dark: #1d301c;
+  --rp-c-brand-darker: #122012;
+  --rp-c-brand-tint: rgba(45, 74, 43, 0.12);
+
+  /* Background */
+  --rp-c-bg: #faf9f6;
+  --rp-c-bg-soft: #f3f2ee;
+  --rp-c-bg-mute: #ebe9e2;
+  --rp-c-bg-alt: #ffffff;
+
+  /* Text */
+  --rp-c-text-1: #1a1f19;
+  --rp-c-text-2: rgba(26, 31, 25, 0.72);
+  --rp-c-text-3: rgba(26, 31, 25, 0.38);
+  --rp-c-text-4: rgba(26, 31, 25, 0.18);
+
+  /* Links */
+  --rp-c-link: var(--rp-c-brand-dark);
+  --rp-c-link-hover: var(--rp-c-brand);
+
+  /* Dividers */
+  --rp-c-divider: rgba(45, 74, 43, 0.18);
+  --rp-c-divider-light: rgba(45, 74, 43, 0.10);
+
+  /* Gray scale */
+  --rp-c-gray: #7d8471;
+  --rp-c-gray-light-1: #949b8a;
+  --rp-c-gray-light-2: #aeb4a5;
+  --rp-c-gray-light-3: #c5c9bd;
+  --rp-c-gray-light-4: #daddd4;
+  --rp-c-gray-light-5: #eeefe9;
+
+  /* Inline Code */
+  --rp-c-text-code: #3d6340;
+  --rp-c-text-code-bg: rgba(45, 74, 43, 0.06);
+  --rp-c-text-code-border: rgba(45, 74, 43, 0.08);
+
+  /* Code Block */
+  --rp-code-title-bg: #f0f1ec;
+  --rp-code-block-bg: var(--rp-c-bg);
+  --rp-code-block-color: #2a3029;
+  --rp-code-block-border: 1px solid var(--rp-c-divider-light);
+  --rp-code-block-shadow: none;
+
+  /* Home Page */
+  --rp-home-hero-secondary-color: #7d8471;
+  --rp-home-hero-title-bg: linear-gradient(
+    90deg,
+    var(--rp-c-brand-dark) 0%,
+    var(--rp-c-brand-dark) 30%,
+    var(--rp-home-hero-secondary-color) 100%
+  );
+  --rp-home-background-bg: radial-gradient(
+      ellipse 80% 60% at 50% -20%,
+      rgba(45, 74, 43, 0.06),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(125, 132, 113, 0.04),
+      transparent
+    ),
+    var(--rp-c-bg);
+  --rp-home-feature-bg: linear-gradient(
+    135deg,
+    #ffffff,
+    rgba(45, 74, 43, 0.03)
+  );
+
+  /* Font */
+  --rp-font-family-base: 'Georgia', 'Noto Serif SC', 'Source Han Serif SC',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --rp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code',
+    'SF Mono', 'Consolas', monospace;
+}
+
+/* ===== Dark Mode ===== */
+[data-theme="forest-canopy"].dark,
+.dark [data-theme="forest-canopy"] {
+  /* Brand */
+  --rp-c-brand: #5a9a56;
+  --rp-c-brand-light: #6fb06b;
+  --rp-c-brand-lighter: #2a3d28;
+  --rp-c-brand-dark: #4a8a46;
+  --rp-c-brand-darker: #3a7a36;
+  --rp-c-brand-tint: rgba(90, 154, 86, 0.16);
+
+  /* Background */
+  --rp-c-bg: #1a2319;
+  --rp-c-bg-soft: #212c20;
+  --rp-c-bg-mute: #283428;
+  --rp-c-bg-alt: #0d120c;
+
+  /* Text */
+  --rp-c-text-1: #edece6;
+  --rp-c-text-2: rgba(237, 236, 230, 0.72);
+  --rp-c-text-3: rgba(237, 236, 230, 0.38);
+  --rp-c-text-4: rgba(237, 236, 230, 0.18);
+
+  /* Links */
+  --rp-c-link: var(--rp-c-brand-light);
+  --rp-c-link-hover: var(--rp-c-brand);
+
+  /* Dividers */
+  --rp-c-divider: rgba(237, 236, 230, 0.16);
+  --rp-c-divider-light: rgba(237, 236, 230, 0.08);
+
+  /* Gray scale */
+  --rp-c-gray: #7a8270;
+  --rp-c-gray-light-1: #5d6555;
+  --rp-c-gray-light-2: #4a5243;
+  --rp-c-gray-light-3: #3a4134;
+  --rp-c-gray-light-4: #2d3328;
+  --rp-c-gray-light-5: #22271e;
+
+  /* Inline Code */
+  --rp-c-text-code: #8fc48b;
+  --rp-c-text-code-bg: rgba(90, 154, 86, 0.10);
+  --rp-c-text-code-border: rgba(90, 154, 86, 0.12);
+
+  /* Code Block */
+  --rp-code-title-bg: #1e2a1d;
+  --rp-code-block-bg: var(--rp-c-bg);
+  --rp-code-block-color: #d4d8ce;
+  --rp-code-block-border: 1px solid var(--rp-c-divider-light);
+
+  /* Home Page */
+  --rp-home-hero-secondary-color: #8fc48b;
+  --rp-home-hero-title-bg: linear-gradient(
+    90deg,
+    var(--rp-c-brand) 0%,
+    var(--rp-c-brand) 30%,
+    var(--rp-home-hero-secondary-color) 100%
+  );
+  --rp-home-background-bg: radial-gradient(
+      ellipse 80% 60% at 50% -20%,
+      rgba(90, 154, 86, 0.08),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(122, 130, 112, 0.05),
+      transparent
+    ),
+    var(--rp-c-bg);
+  --rp-home-feature-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(90, 154, 86, 0.04)
+  );
+}

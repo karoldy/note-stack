@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Frontend",
+    "link": "/frontend/",
+    "activeMatch": "/frontend/"
+  },
+  {
+    "text": "Backend",
+    "link": "/backend/",
+    "activeMatch": "/backend/"
+  },
+  {
+    "text": "DevOps",
+    "link": "/devops/",
+    "activeMatch": "/devops/"
+  },
+  {
+    "text": "AI",
+    "link": "/ai/",
+    "activeMatch": "/ai/"
+  },
+  {
+    "text": "Engineering",
+    "link": "/engineering/",
+    "activeMatch": "/engineering/"
+  },
+  {
+    "text": "Career",
+    "link": "/career/",
+    "activeMatch": "/career/"
+  }
+]
