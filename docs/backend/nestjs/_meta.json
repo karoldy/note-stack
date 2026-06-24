@@ -1,0 +1,42 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "概览"
+  },
+  {
+    "type": "file",
+    "name": "nest-basics",
+    "label": "基础与三层架构"
+  },
+  {
+    "type": "file",
+    "name": "graphql-code-first",
+    "label": "GraphQL Code First"
+  },
+  {
+    "type": "file",
+    "name": "dto-validation",
+    "label": "DTO 校验"
+  },
+  {
+    "type": "file",
+    "name": "unit-testing",
+    "label": "单元测试"
+  },
+  {
+    "type": "file",
+    "name": "docker-deploy",
+    "label": "Docker 部署"
+  },
+  {
+    "type": "file",
+    "name": "cicd",
+    "label": "CI/CD"
+  },
+  {
+    "type": "file",
+    "name": "codegen",
+    "label": "GraphQL Codegen"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "概览"
+  },
+  {
+    "type": "file",
+    "name": "jwt-auth",
+    "label": "JWT 认证"
+  },
+  {
+    "type": "file",
+    "name": "graphql-guard",
+    "label": "GraphQL 权限守卫"
+  },
+  {
+    "type": "file",
+    "name": "refresh-token",
+    "label": "Refresh Token 轮换"
+  }
+]
