@@ -1,0 +1,42 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "AI 概览"
+  },
+  {
+    "type": "dir",
+    "name": "llm",
+    "label": "LLM 基础"
+  },
+  {
+    "type": "dir",
+    "name": "prompt-engineering",
+    "label": "提示词工程"
+  },
+  {
+    "type": "dir",
+    "name": "ai-engineering",
+    "label": "AI 工程化"
+  },
+  {
+    "type": "dir",
+    "name": "agent",
+    "label": "AI Agent"
+  },
+  {
+    "type": "dir",
+    "name": "openai",
+    "label": "OpenAI"
+  },
+  {
+    "type": "dir",
+    "name": "mcp",
+    "label": "MCP 协议"
+  },
+  {
+    "type": "dir",
+    "name": "skills",
+    "label": "Skills 技能库"
+  }
+]

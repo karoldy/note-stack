@@ -2,7 +2,7 @@
 description: claude-api — Claude API / Anthropic SDK 参考手册，涵盖模型选择、定价、参数配置、流式响应、Tool Use、MCP、Agent 模式、Prompt Caching、Token 计数与模型迁移。
 ---
 
-# claude-api
+# Claude API 参考
 
 ## 概述
 

@@ -2,7 +2,7 @@
 description: codebase-to-course — 将任意代码仓库转化为自包含的交互式 HTML 课程，专为 Vibe Coder 设计，通过追踪运行时行为而非抽象概念来教授代码工作原理。
 ---
 
-# codebase-to-course
+# 代码仓库转课程
 
 ## 概述
 
