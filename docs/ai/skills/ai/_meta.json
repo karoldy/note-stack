@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "AI 工具概览"
+  },
+  {
+    "type": "file",
+    "name": "claude-api",
+    "label": "Claude API 参考"
+  },
+  {
+    "type": "file",
+    "name": "codebase-to-course",
+    "label": "代码仓库转课程"
+  },
+  {
+    "type": "file",
+    "name": "karpathy-guidelines",
+    "label": "Karpathy 编码准则"
+  }
+]

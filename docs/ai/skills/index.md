@@ -10,12 +10,15 @@ Skill 是 Claude Code 的扩展机制，每个 Skill 封装了特定领域的知
 
 本目录系统性收录 Claude Code 内置 Skills 及社区 Skills，涵盖功能说明、触发条件与使用示例。
 
-## Skills 目录
+## Skills 分类
 
-| Skill | 说明 |
+Skills 按领域分为以下三类：
+
+| 分类 | 说明 |
 | --- | --- |
-| [Claude API 参考](./claude-api.md) | Claude API / Anthropic SDK 参考：模型、定价、参数、流式、工具调用 |
-| [代码仓库转课程](./codebase-to-course.md) | 将任意代码仓库转化为自包含的交互式 HTML 课程，专为 Vibe Coder 设计（4.7k+ Stars） |
+| [AI 工具](./ai/index.md) | Claude API 参考、代码分析与转换等 AI/LLM 工具 Skill |
+| [前端](./frontend/index.md) | React、Vue、Next.js、Nuxt 等前端框架及工程化 Skill |
+| [后端](./backend/index.md) | NestJS、GraphQL、数据库等后端技术栈 Skill（建设中） |
 
 ## Skill 文档规范
 

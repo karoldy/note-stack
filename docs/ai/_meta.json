@@ -16,6 +16,11 @@
   },
   {
     "type": "dir",
+    "name": "prompts",
+    "label": "提示词模板"
+  },
+  {
+    "type": "dir",
     "name": "ai-engineering",
     "label": "AI 工程化"
   },
