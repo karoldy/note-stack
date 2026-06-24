@@ -43,6 +43,78 @@ Apply these rules when writing or reviewing Rspress (v2) sites.
 - Prefer documented Rspress theme/runtime APIs over importing from internal source paths
 - For app-wide UI or providers, use `globalUIComponents` or theme overrides instead of repeating imports in each page
 
+### Container (Callout)
+
+Use `:::` syntax to highlight important information. Six built-in types: `note`, `tip`, `info`, `warning`, `danger`, `details`.
+
+- Use lowercase type names — `:::tip`, never `:::Tip`
+- Append a title inline: `:::tip 自定义标题`
+- Use `details` for collapsible content blocks
+- Prefer containers over raw `>` blockquotes for callouts — they render with colored borders and icons
+- In MDX files, prefer inline title (`:::tip 标题`) over curly-brace syntax to avoid escaping issues
+- GitHub Alerts syntax (`> [!NOTE]`) is also supported, but `:::` is more concise for Rspress-first projects
+
+> Full syntax and examples: `references/containers.md`
+
+### Code Blocks
+
+Rspress uses Shiki for compile-time syntax highlighting. Meta attributes can be freely combined.
+
+| Meta | Purpose |
+| --- | --- |
+| `title="..."` | Display a header bar |
+| `file="./path"` | Import external file content (relative to current file, `/`-rooted to docs dir, `<root>/` for project root) |
+| `lineNumbers` | Enable per-block line numbers |
+| `wrapCode` | Enable per-block code wrapping |
+| `fold` | Collapsible block (expand button) |
+| `height="300"` | Fixed height with scrollbar; combined with `fold` controls collapsed height |
+| `{1,3-4}` | Highlight specific lines via `transformerCompatibleMetaHighlight` |
+
+- Prefer notation highlighting (`// [!code highlight]`) over meta highlighting — it survives formatter line renumbering
+- Configure Shiki transformers in `rspress.config.ts` → `markdown.shiki.transformers`
+- Use `CodeBlockRuntime` from `@rspress/core/theme` only for dynamic code rendering (runtime cost)
+- Name file-imported code files with `_` prefix to prevent route generation
+
+> Full syntax and examples: `references/code-blocks.md`
+
+### Links
+
+Rspress supports two link forms: file path (`.md`/`.mdx` extension) and URL (no extension). Both render identically.
+
+- **Prefer relative file paths** — IDE autocomplete, file navigation, and automatic link updates on file moves
+- Absolute paths start from the docs directory root
+- Use `<root>/` prefix to reference files outside the docs directory
+- External links automatically get `target="_blank" rel="noreferrer"`
+- Use reference-style definitions for pages with many links to keep prose clean
+- Custom anchor IDs: `## Heading \{#custom-id}`
+- Enable `markdown.link.checkDeadLinks: true` to catch broken links at build time
+- Enable `markdown.image.checkDeadImages: true` to catch missing local images
+- Pick one link style (file path or URL) consistently across the project
+
+> Full syntax and examples: `references/links.md`
+
+### Mermaid Diagrams
+
+Use ` ```mermaid` code blocks to render diagrams. Requires `rspress-plugin-mermaid`.
+
+- Use `graph TD` / `graph LR` for flowcharts, `sequenceDiagram` for interactions, `graph TB` for architecture
+- Pass Mermaid config via `mermaid({ mermaidConfig: { theme: 'forest' } })` in plugin options
+- Prefer Mermaid over ASCII art for any architecture, flow, or sequence visualization
+- Diagrams render at build time as SVG — no runtime cost
+
+> Full syntax and examples: `references/mermaid.md`
+
+### File Tree
+
+Use ` ```tree` code blocks to render interactive directory structures. Requires `rspress-plugin-file-tree`.
+
+- Use standard `tree` command output format (`├──`, `└──`, `│`)
+- Configure `initialExpandDepth` to control default expansion (default `0`, `Infinity` for all)
+- Use for documenting project structure, component hierarchies, or config file layouts
+- The rendered output is an interactive component with collapsible folders
+
+> Full syntax and examples: `references/file-tree.md`
+
 ## Theme And Styling
 
 - Prefer CSS variables for brand colors, spacing, and surface styling
@@ -68,6 +140,29 @@ Apply these rules when writing or reviewing Rspress (v2) sites.
 - Prefer official Rspress plugins for search, preview, and API-doc scenarios before building custom solutions
 - For component or library docs, use `@rspress/plugin-preview` and `@rspress/plugin-api-docgen` when interactive demos or API tables are needed
 - Keep plugin usage explicit in config and remove unused plugins to reduce maintenance cost
+
+### Community Plugins
+
+| Plugin | Purpose | Code Block | Config |
+| --- | --- | --- | --- |
+| `rspress-plugin-mermaid` | Render Mermaid diagrams | ```` ```mermaid ```` | `mermaid({ mermaidConfig: {...} })` |
+| `rspress-plugin-file-tree` | Render interactive file trees | ```` ```tree ```` | `fileTree({ initialExpandDepth: 0 })` |
+
+```ts
+// rspress.config.ts
+import { defineConfig } from 'rspress/config';
+import mermaid from 'rspress-plugin-mermaid';
+import fileTree from 'rspress-plugin-file-tree';
+
+export default defineConfig({
+  plugins: [
+    mermaid({ mermaidConfig: { theme: 'forest' } }),
+    fileTree({ initialExpandDepth: Infinity }),
+  ],
+});
+```
+
+> Full reference: `references/mermaid.md` | `references/file-tree.md`
 
 ## Build, Deploy, And Debugging
 

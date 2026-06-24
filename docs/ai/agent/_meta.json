@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "AI Agent 概述"
+  },
+  {
+    "type": "dir",
+    "name": "claude-code",
+    "label": "Claude Code"
+  }
+]

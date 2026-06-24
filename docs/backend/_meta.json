@@ -1,0 +1,37 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "概览"
+  },
+  {
+    "type": "dir",
+    "name": "nestjs",
+    "label": "NestJS"
+  },
+  {
+    "type": "dir",
+    "name": "graphql",
+    "label": "GraphQL"
+  },
+  {
+    "type": "dir",
+    "name": "authentication",
+    "label": "认证授权"
+  },
+  {
+    "type": "dir",
+    "name": "database",
+    "label": "数据库"
+  },
+  {
+    "type": "dir",
+    "name": "nodejs",
+    "label": "Node.js"
+  },
+  {
+    "type": "dir",
+    "name": "express",
+    "label": "Express"
+  }
+]

@@ -31,4 +31,9 @@ export default defineConfig({
       },
     }),
   ],
+  builderConfig: {
+    server: {
+      port: 4000
+    }
+  }
 });
