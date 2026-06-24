@@ -1,0 +1,82 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "Skills 概览"
+  },
+  {
+    "type": "file",
+    "name": "claude-api",
+    "label": "Claude API 参考"
+  },
+  {
+    "type": "file",
+    "name": "codebase-to-course",
+    "label": "代码仓库转课程"
+  },
+  {
+    "type": "file",
+    "name": "vercel-react-best-practices",
+    "label": "Vercel React 最佳实践"
+  },
+  {
+    "type": "file",
+    "name": "next-best-practices",
+    "label": "Next.js 最佳实践"
+  },
+  {
+    "type": "file",
+    "name": "shadcn",
+    "label": "shadcn/ui 生态"
+  },
+  {
+    "type": "file",
+    "name": "web-quality",
+    "label": "Web 质量审计"
+  },
+  {
+    "type": "file",
+    "name": "playwright-best-practices",
+    "label": "Playwright 最佳实践"
+  },
+  {
+    "type": "file",
+    "name": "frontend-ui-engineering",
+    "label": "前端 UI 工程化"
+  },
+  {
+    "type": "file",
+    "name": "frontend-design",
+    "label": "前端视觉设计"
+  },
+  {
+    "type": "file",
+    "name": "react-doctor",
+    "label": "React 代码质量扫描"
+  },
+  {
+    "type": "file",
+    "name": "svelte-code-writer",
+    "label": "Svelte 代码编写"
+  },
+  {
+    "type": "file",
+    "name": "angular-component",
+    "label": "Angular 组件开发"
+  },
+  {
+    "type": "file",
+    "name": "vue",
+    "label": "Vue 开发"
+  },
+  {
+    "type": "file",
+    "name": "nuxt",
+    "label": "Nuxt 开发"
+  },
+  {
+    "type": "file",
+    "name": "tanstack-query-best-practices",
+    "label": "TanStack Query 最佳实践"
+  }
+]
