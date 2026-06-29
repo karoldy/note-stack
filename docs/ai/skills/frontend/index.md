@@ -31,6 +31,7 @@ description: 前端开发 Skills — 涵盖 React、Vue、Next.js、Nuxt、Angul
 | [前端 UI 工程化](./frontend-ui-engineering.md) | 前端 UI 工程化实践 |
 | [UI UX Pro Max](./ui-ux-pro-max.md) | 95k+ Stars 设计智能 Skill，67 种 UI 风格 + 设计系统自动生成 |
 | [Impeccable](./impeccable.md) | 40k+ Stars 设计语言 Skill，23 个命令 + 44 条检测规则，摆脱 AI 模板化 UI |
+| [Taste Skill](./taste-skill.md) | 52.6k+ Stars 反 Slop 框架，10+ 变体 Skill + 可调参数旋钮，强制完整代码输出 |
 
 ### 数据 & 测试
 
